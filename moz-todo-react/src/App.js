@@ -2,10 +2,11 @@
 import React from 'react';
 import ToDo from './components/ToDo';
 
-function App(props) {
+function App() {
   return (
     <div className="todoapp stack-large">
-      <h1>Parlsey's To Do List</h1>
+      <h1>Parsley's To-Do List
+      </h1>
       <form>
         <input
           type="text"
@@ -19,52 +20,17 @@ function App(props) {
         </button>
       </form>
       <h2 id="list-heading">
-        3 tasks remaining
+       Tasks remaining
       </h2>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
-        <li className="todo stack-small">
-          <div className="c-cb">
-            <input id="todo-0" type="checkbox" defaultChecked={true} />
-            <label className="todo-label" htmlFor="todo-0">
-              Eat
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Eat</span>
-            </button>
-          </div>
-        </li>
-        <li className="todo stack-small">
-          <div className="c-cb">
-            <input id="todo-1" type="checkbox" />
-            <label className="todo-label" htmlFor="todo-1">
-              Sleep
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Sleep</span>
-            </button>
-          </div>
-        </li>
-        <li className="todo stack-small">
-          <div className="c-cb">
-            <input id="todo-2" type="checkbox" />
-            <label className="todo-label" htmlFor="todo-2">
-              Watch birds
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Watch birds</span>
-            </button>
-          </div>
-        </li>
+        <ToDo name="Eat" completed={true}/>
+        <ToDo name="Sleep" completed={true}/>
+        <ToDo name="Watch birds" completed={false}/>
+        <ToDo name="Use the litter box" completed={false}/>
       </ul>
     </div>
   );
