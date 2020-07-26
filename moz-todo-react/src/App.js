@@ -1,4 +1,6 @@
+//The styles in this App.js is copied from (MDN, 2020b), and modified for this assignment.
 import React from 'react';
+
 
 function App(props) {
   return (
@@ -54,12 +56,12 @@ function App(props) {
           <div className="c-cb">
             <input id="todo-2" type="checkbox" />
             <label className="todo-label" htmlFor="todo-2">
-              Repeat
+              Watch birds
             </label>
           </div>
           <div className="btn-group">
             <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Repeat</span>
+              Delete <span className="visually-hidden">Watch birds</span>
             </button>
           </div>
         </li>
