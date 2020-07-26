@@ -1,6 +1,6 @@
 //The styles in this App.js is copied from (MDN, 2020b), and modified for this assignment.
 import React from 'react';
-
+import ToDo from './components/ToDo';
 
 function App(props) {
   return (
