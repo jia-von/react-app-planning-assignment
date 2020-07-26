@@ -16,7 +16,7 @@ class ToDo extends React.Component {
             <li className="todo stack-small">
                 <div className="c-cb">
                 <input id="todo-0" type="checkbox" defaultChecked={this.props.completed} />
-                    <label className="todo-label" htmlFor="todo-0">
+                    <label className="todo-label" htmlFor={this.props.id}>
                         {this.props.name}
                     </label>
                 </div>
